@@ -14,4 +14,10 @@
 
 ## 预览图
 
-![homework](./preview/homework.jpg)
+### homework
+
+<img src="https://raw.githubusercontent.com/lijiancheng0614/LaTeX-Templates/master/preview/homework.jpg" width="256">
+
+### ppt
+
+<img src="https://raw.githubusercontent.com/lijiancheng0614/LaTeX-Templates/master/preview/ppt_1.jpg" width="256"><img src="https://raw.githubusercontent.com/lijiancheng0614/LaTeX-Templates/master/preview/ppt_2.jpg" width="256">
