@@ -1,0 +1,152 @@
+% (c) 2002 Matthew Boedicker <mboedick@mboedick.org> (original author) http://mboedick.org
+% (c) 2003-2007 David J. Grant <davidgrant-at-gmail.com> http://www.davidgrant.ca
+% (c) 2016 Jiancheng Li <lijiancheng0614@gmail.com> http://lijiancheng0614.github.io/
+%
+% This work is licensed under the Creative Commons Attribution-ShareAlike 3.0 Unported License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/3.0/ or send a letter to Creative Commons, 171 Second Street, Suite 300, San Francisco, California, 94105, USA.
+\documentclass[a4paper,11pt]{article}
+
+\usepackage{xeCJK}
+\usepackage{framed}
+\usepackage{graphicx}
+
+\setCJKmainfont[BoldFont={SimHei},ItalicFont={KaiTi}]{SimSun}
+
+\pagestyle{empty}
+\raggedbottom
+\raggedright
+\setlength{\evensidemargin}{-0.25in}
+\setlength{\headheight}{-0.25in}
+\setlength{\headsep}{0in}
+\setlength{\oddsidemargin}{-0.25in}
+%\setlength{\paperheight}{11in}
+%\setlength{\paperwidth}{8.5in}
+\setlength{\tabcolsep}{0in}
+\setlength{\textheight}{10in}
+\setlength{\textwidth}{7in}
+\setlength{\topmargin}{-0.1in}
+\setlength{\topskip}{0in}
+\setlength{\voffset}{0.1in}
+\setlength{\hoffset}{-0.12in}
+
+\newcommand{\resheading}[1]{
+    \setlength{\fboxrule}{1.25pt}
+    \setlength{\fboxsep}{5pt}
+    \setlength{\FrameSep}{5pt}
+    \framebox[\textwidth][l]{\renewcommand{\CJKglue}{\hskip 2pt plus 0.08\baselineskip}\textbf{\large ~#1}}
+}
+
+\newcommand{\ressubheading}[2]{
+    \begin{tabular*}{6.5in}{l@{\extracolsep{\fill}}r}
+        \textbf{#1} & #2 \\
+    \end{tabular*}
+    \vspace{-5pt}
+}
+
+\newcommand{\ressubitem}[1]{
+    \begin{itemize} \setlength{\itemsep}{-1pt}
+        #1
+    \end{itemize}
+    \vspace{-5pt}
+}
+
+\newcommand{\resitem}[2]{
+    \item
+        \begin{tabular*}{6.5in}{l@{\extracolsep{\fill}}r}
+            \textbf{#1} & #2 \\
+        \end{tabular*}
+}
+
+\linespread{1.5}
+
+\begin{document}
+
+\begin{tabular*}{7in}{c@{\extracolsep{\fill}}r}
+    \begin{tabular}{l}
+        \textbf{\LARGE Wenming Zhong} \\[1.5 ex]
+        \renewcommand{\CJKglue}{\hskip 2pt plus 0.08\baselineskip}\textbf{\LARGE 中文名}
+    \end{tabular} &
+    \begin{tabular}{r}
+        email@gmail.com\\
+        (86) 123 1234 1234 \\
+        http://xxx \\
+    \end{tabular}
+\end{tabular*}
+\vspace{5pt}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\resheading{教育}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{itemize} \setlength{\itemsep}{-1pt}
+    \item
+        \begin{tabular*}{6.5in}{l@{\extracolsep{\fill}}r}
+        \textbf{XX大学}~XX专业~硕士 & 2015/09 - 2018/06 \\
+        \end{tabular*}
+    \item
+        \begin{tabular*}{6.5in}{l@{\extracolsep{\fill}}r}
+        \textbf{XX大学}~XX专业~学士 & 2011/09 - 2015/06 \\
+        \end{tabular*}
+\end{itemize}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\resheading{经历}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{itemize} \setlength{\itemsep}{-1pt}
+    \item
+        \ressubheading{XX公司 - 软件设计师}{2015/06 - 2016/06}
+        \ressubitem{
+            \item 完成了XX。
+            \item 实现了XX。
+        }
+    \item
+        \ressubheading{XX公司 - 实习生}{2015/03 - 2015/06}
+        \ressubitem{
+            \item 实习期间做了XX。
+        }
+    \item
+        \ressubheading{XX公司 - 实习生}{2014/09 - 2015/02}
+        \ressubitem{
+            \item 实习期间做了XX。
+        }
+    \item
+        \ressubheading{主要项目}{}
+        \ressubitem{
+            \item 项目一：合作实现XX网站，担任项目管理角色。
+            \item 项目二：合作实现XX应用，主要负责编码部分。
+            \item 项目三：独立完成XX软件。
+        }
+    \item
+        \ressubheading{校园经历}{}
+        \ressubitem{
+            \item 班长，XX社团社长。
+            \item 助教：XX。
+            \item 志愿者：XX。
+        }
+\end{itemize}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\resheading{所获荣誉}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{itemize} \setlength{\itemsep}{-1pt}
+    \resitem
+        {2016年XX比赛}{第一名}
+    \resitem
+        {2016年XX比赛}{一等奖}
+    \resitem
+        {2015年XX比赛}{最佳XX奖}
+    \resitem
+        {2015年XX比赛}{优秀奖}
+    \resitem
+        {2014年XX比赛}{优秀奖}
+\end{itemize}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\resheading{技能}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{itemize} \setlength{\itemsep}{-1pt}
+    \item
+        获得XX认证
+    \item
+        熟悉XX
+\end{itemize}
+
+\end{document}
