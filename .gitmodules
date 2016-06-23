@@ -1,0 +1,6 @@
+[submodule "thesis/thu"]
+	path = thesis/thu
+	url = https://github.com/xueruini/thuthesis.git
+[submodule "thesis/buaa"]
+	path = thesis/buaa
+	url = https://github.com/BHOSC/BUAAthesis
